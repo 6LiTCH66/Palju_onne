@@ -19,6 +19,7 @@ namespace Palju_onne
 
 
         private string[] Aastaajad = { "Jaanuar", "Veebruar", "Detsember"};
+        
         private string[] OnnitlusedJaanuar =
         {
             "Поздравляем с годом наступающим!", "Желаем вам удач, любви, тепла!",
@@ -169,14 +170,11 @@ namespace Palju_onne
                     mail.Body = OnnitlusedDetsember[randomNumber];
                     DisplayAlert("Декабрь", "Декабрь", "OK");
                 }
-                
-                
-                
                 SmtpServer.Port = 587;  
                 SmtpServer.Host = "smtp.gmail.com";  
-                SmtpServer.EnableSsl = true;  
+                SmtpServer.EnableSsl = true;
                 SmtpServer.UseDefaultCredentials = false;  
-                SmtpServer.Credentials = new System.Net.NetworkCredential("iljaharbi@gmail.com", "fdsfsd");
+                SmtpServer.Credentials = new System.Net.NetworkCredential("iljaharbi@gmail.com", "aa");
   
                 SmtpServer.Send(mail);  
             }  
